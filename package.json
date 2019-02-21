@@ -1,0 +1,22 @@
+{
+  "name": "syskit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doter1995/syskit.git"
+  },
+  "author": "doter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doter1995/syskit/issues"
+  },
+  "homepage": "https://github.com/doter1995/syskit#readme",
+  "devDependencies": {
+    "electron": "^4.0.5"
+  }
+}
