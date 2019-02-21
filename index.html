@@ -6,7 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
+  <script>
+    var _require = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+  </script>
   <body>
     hello word!
+    <div id="app"></div>
+    <button id="show">aaaa</button>
   </body>
+  <script src="./jq.min.js"></script>
+  <script>
+    var sharedObject = _require("electron").remote.getGlobal("sharedObject");
+    $("#show").click(function() {
+      console.log(sharedObject.someProperty);
+    });
+  </script>
 </html>
