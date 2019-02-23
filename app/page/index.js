@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Button } from "antd";
 
 class HelloMessage extends React.Component {
   render() {
-    return <div>Hello,{this.props.name}</div>;
+    return (
+      <div>
+        Hello,{this.props.name}
+        <Button type="primary">Primary</Button>
+      </div>
+    );
   }
 }
 
