@@ -2,9 +2,10 @@
   "name": "syskit",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "app/app.js",
   "scripts": {
-    "start": "electron ."
+    "start-app": "electron .",
+    "start": "parcel watch ./app/page/index.html --public-url ./ --target electron"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,14 @@
   },
   "homepage": "https://github.com/doter1995/syskit#readme",
   "devDependencies": {
-    "electron": "^4.0.5"
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "electron": "^4.0.5",
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
