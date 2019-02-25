@@ -5,7 +5,7 @@
   "main": "app/app.js",
   "scripts": {
     "start-app": "electron .",
-    "start": "parcel watch ./app/page/index.html --public-url ./ --target electron"
+    "start": "parcel watch ./app/index.html --public-url ./ --target electron"
   },
   "repository": {
     "type": "git",
@@ -19,15 +19,16 @@
   "homepage": "https://github.com/doter1995/syskit#readme",
   "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "electron": "^4.0.5",
     "parcel-bundler": "^1.11.0"
   },
   "dependencies": {
-    "antd": "^3.13.5",
-    "babel-plugin-import": "^1.11.0",
+    "os-name": "^3.0.0",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "sass": "^1.17.2"
   }
 }

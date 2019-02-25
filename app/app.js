@@ -18,7 +18,6 @@ function createWindow() {
   });
 
   win.loadURL(url);
-  console.log(os.type());
   // 在主进程中
   win.webContents.toggleDevTools();
 }
